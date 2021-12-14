@@ -31,15 +31,28 @@ class HomePage extends StatelessWidget {
                             Positioned(
                               bottom: 0,
                               right: 0,
-                              child: SizedBox(
-                                width: 40,
-                                height: 40,
-                                child: FloatingActionButton(
-                                    onPressed: () {},
-                                    backgroundColor: Colors.blue,
-                                    child: const Icon(Icons.add)),
+                              child: Container(
+                                width: 35,
+                                height: 35,
+                                // alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Center(
+                                  child: SizedBox(
+                                    width: 30,
+                                    height: 30,
+                                    child: FloatingActionButton(
+                                        onPressed: () {},
+                                        backgroundColor: Colors.blue,
+                                        child: const Icon(Icons.add)),
+                                  ),
+                                ),
                               ),
+
                             ),
+
                           ],
                         ),
                         Text("박경환"),
