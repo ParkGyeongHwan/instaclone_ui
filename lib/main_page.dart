@@ -7,7 +7,7 @@ import 'instaclone_ui/login_page.dart';
 import 'instaclone_ui/mail_page.dart';
 
 class MainPage extends StatefulWidget {
-  MainPage({Key key}) : super(key: key);
+  MainPage({Key? key}) : super(key: key);
 
   @override
   State<MainPage> createState() => _MainPageState();
