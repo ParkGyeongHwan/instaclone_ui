@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'instaclone_ui/album_page.dart';
 import 'instaclone_ui/home_page.dart';
@@ -37,20 +36,16 @@ class _MainPageState extends State<MainPage> {
         actions: <Widget>[
           IconButton(
             onPressed: () {
-               Navigator.pushReplacement(
-                       context,
-                       MaterialPageRoute
-                     (builder: (context) => LoginPage()),
-               );
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
+              );
             },
             icon: Icon(Icons.logout_outlined),
           )
         ],
         title: Text(
-          'instagram',
-          style: GoogleFonts.architectsDaughter(fontStyle: FontStyle.italic,
-              color: Colors.red),
-
+          'instagram',style: TextStyle(color: Colors.black,fontStyle: FontStyle.italic),
         ),
       ),
       body: Center(
